@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #ffff;
+    background-color: #1C1B22;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.verde{
+    color: #00FE9D;
+}
+header{
+    width: 84.722vw;
+    margin-top: 45px;
+    margin-bottom: 124px;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
+    width: 31.25vw;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    text-decoration: none;
+    color: #ffff;
+}
+nav a:hover{
+    color: #00FE9D;
+    font-weight: 700;
+}
+main{
+    width: 84.722vw;
+    display: flex;
+    flex-direction: column;
+    background-image: url("img/perfil.png");
+}
+.capa{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.textoCapa {
+    width: 40vw; 
+}
+.textoCapa h1{
+    font-size: 60px;
+    font-weight: 700;
+}
+.textoCapa p{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+.textoCapa a{
+    font-size: 24px;
+    font-weight: 600;
+    color: #00FE9D;
+    border: #00FE9D solid 1px;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 100px;
+}
+.textoCapa a:hover{
+    font-weight: 800;
+    background-color: #28272C;
+}
+
+.imagem{
+    position: relative;
+    width: 35vw;
+    height: 35vw;
+    border-radius: 50%;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation: flutuar;
+
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.imagem::before{
+    content: " ";
+    position: absolute;
+    width: 35vw;
+    height: 35vw;
+    background-color: #00FE9D;
+    background-image: linear-gradient(#d400fe, #00FE9D);
+    animation: border_animate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes border_animate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes flutuar{
+    0%{
+        transform: translate(0,0px);
+    }
+    50%{
+        transform: translate(-10px,10px);
+    }
+    100%{
+        transform: translate(-0,-0px);
+    }
+}
+.imagem::after {
+    content: " ";
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/perfil.jpg);
+    inset: 5px;
+    border-radius: inherit;
+}
+
+
+.about{
+    width: 100%;
+    background-color: #28272C;
+    padding: 55px;
+    border-radius: 15px;
+    margin-bottom: 60px;
+}
+.about h1{
+    margin-bottom: 35px;
+    font-size: 35px;
+    font-weight: 600;
+}
+.about p{
+    margin-bottom: 35px;
+    font-size: 24px;
+}
+.about .info{
+    display: flex;
+    justify-content: space-between;
+}
+.about .info ul{
+    list-style: none;
+}
+.about .info li{
+    margin-bottom: 35px;
+    font-size: 24px;
+}
+.skills{
+    padding: 55px;
+}
+.skills  h1{
+    margin-bottom: 35px;
+    font-size: 35px;
+    font-weight: 600;
+}
+.skills ul{
+ width: 100%;
+}
+.skills li{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.skills li p{
+    margin-left: 10px;
+    color: white;
+}
+
+.barra {
+    background-image:  linear-gradient(-90deg,#d400fe, #00FE9D);
+    height: 20px;
+    border-radius: 0 10px 10px 0;
+    z-index: 1; 
+}
+
+.barrafundo{
+    width: 100%;
+    height: 20px;
+    background-color: #28272C;
+    z-index: -1; 
+}
+.coluna{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
