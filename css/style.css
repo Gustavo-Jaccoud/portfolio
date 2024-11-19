@@ -200,3 +200,171 @@ main{
     justify-content: space-between;
     gap: 30px;
 }
+.projects{
+    margin-top: 100px;
+    width: 100%;
+    background-color: #28272C;
+    border-radius: 15px;
+    margin-bottom: 100px;
+    
+}
+.carousel {
+    position: relative;
+    width: 100%;
+    padding: 55px;
+    display: flex;
+}
+
+.project {
+    width: 100%;
+    height: 27vw;
+    display: none;
+    justify-content: space-between;
+}
+.project .text{
+    display: flex;
+    width: 41.667vw;
+    flex-direction: column;
+}
+
+.project h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+.project .numero{
+    font-size: 64px;
+    font-weight: 400;
+}
+.project .project_name{
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+.project .descricao{
+    font-size: 24px;
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+.project .tags {
+    color: #00FE9D;
+    margin-bottom: 5px;
+}
+.project .link{
+    text-decoration: none;
+    color: #d400fe;
+}
+.project .link:hover{
+    color: #8f05aa;
+}
+.project.active {
+    display: flex;
+}
+
+.project img {
+    width: 31.875vw;
+    height: 24.792vw;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.carousel button {
+    position: absolute;
+    background-color: #00FE9D;
+    color: #1C1B22;
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+}
+.carousel button:hover{
+    background-color: #02ca7e;
+}
+
+.voltar {
+    right: 105px;
+    top:470px;
+}
+
+.passar {
+    right: 55px;
+    top:470px;
+}
+
+.contact{
+    width: 100%;
+}
+
+.contact form{
+    width: 49vw;
+    padding: 55px;
+    background-color: #28272C;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+.contact form h1{
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #00FE9D;
+}
+.contact form p{
+    font-size: 24px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.contact form input{
+    background-color: #1C1B22;
+    margin-bottom: 30px;
+    color: white;
+    border: none;
+    padding: 9px;
+    font-size: 20px;
+    height: 3vw;
+}
+.metade{
+    width: 49%;
+}
+textarea{
+    background-color: #1C1B22;
+    margin-bottom: 30px;
+    color: white;
+    border: none;
+    padding: 9px;
+    font-size: 20px;
+    height: 14vw;
+}
+.contato{
+    width: 29.167vw;
+}
+.contato p{
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+iframe{
+    width: 29.167vw;
+    border-radius: 15px;
+}
+
+footer{
+    margin-top: 100px;
+    background-color: #28272C;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+footer p{
+    color: #00FE9D;
+    font-size: 24px;
+}
+
