@@ -13,14 +13,37 @@
     <header>
         <h1><span class="verde">.</span>Gustavo</h1>
         <nav>
-            <ul>
+            <!-- Navegação Desktop -->
+            <ul class="nav_desk">
                 <li><a href="#about">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+            
+            <!-- Menu Hambúrguer -->
+            <div id="menu">
+                <div id="menu-bar" onclick="menuOnClick()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+                <div id="nav">
+                    <nav class="nav" >
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </nav>
     </header>
+    
+
+<div class="menu-bg" id="menu-bg"></div>
     <main>
         <div class="capa">
             <div class="textoCapa">
@@ -46,13 +69,6 @@
                     <li>Email: gustavo.caua@souunit.com.br</li>
                 </ul>
             </div>
-            <i class="fa-brands fa-html5 fa-2xl"></i>
-            <i class="fa-brands fa-css3-alt fa-2xl"></i>
-            <i class="fa-brands fa-js fa-2xl"></i>
-            <i class="fa-brands fa-php fa-2xl"></i>
-            <i class="fa-brands fa-laravel fa-2xl"></i>
-            <i class="fa-solid fa-database fa-2xl"></i>
-            <i class="fa-brands fa-python fa-2xl"></i>
         </div>
         <div class="skills">
             <h1 id="skills">Skills</h1>

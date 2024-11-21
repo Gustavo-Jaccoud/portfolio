@@ -25,3 +25,8 @@ document.querySelector('.passar').addEventListener('click', goToNextProject);
 document.querySelector('.voltar').addEventListener('click', goToPreviousProject);
 
 showProject(currentIndex);
+
+function menuOnClick() {
+    document.getElementById("menu-bar").classList.toggle("change");  // Ativa/Desativa animação do ícone
+    document.getElementById("nav").classList.toggle("change");        // Exibe/Oculta o menu
+}
